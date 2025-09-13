@@ -5,5 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Validation Form</title>
   </head>
-  <body></body>
+  <body>
+    <div class="form-container">
+      <form novalidate>
+        <div class="form-field">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-field">
+          <label for="country">Country:</label>
+          <select id="country" name="country">
+            <option value="">--Please choose an option--</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <option value="GB">United Kingdom</option>
+            <option value="AU">Australia</option>
+            <option value="DE">Germany</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="postalCode">
+            <input type="text" id="postalCode" name="postal_code" />
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="password">Password:</label>
+          <input type="password" id="password" />
+        </div>
+        <div class="form-field">
+          <label for="confirm_password">Confirm Password:</label>
+          <input type="password" id="confirm_password" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
 </html>
