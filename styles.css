@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+form {
+    width: 350px;
+}
+
+input {
+    outline: none;
+    padding: 0.4rem;
+}
+
+input:invalid {
+    border:1px red solid;
+}
+
+
+select {
+    padding: 0.4rem;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 1rem;
+}
+
+button[type="submit"] {
+   width: 100%;
+   padding: 0.5rem;
+   border: none;
+   color: white;
+   background-color: rgb(98, 98, 244);
+}
+
+.email-err-active {
+    color: red;
+}
