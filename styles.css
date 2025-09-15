@@ -18,7 +18,8 @@ input {
     padding: 0.4rem;
 }
 
-input:invalid {
+input:invalid:focus {
+    padding: 0.47rem;
     border:1px red solid;
 }
 
@@ -49,6 +50,10 @@ button[type="submit"] {
    background-color: rgb(98, 98, 244);
 }
 
-.email-err-active {
+.email-err-active ,
+.password-err-active,
+.confirm-password-err-active,
+.postal-err-active
+{
     color: red;
 }

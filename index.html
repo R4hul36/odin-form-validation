@@ -9,19 +9,19 @@
   <body>
     <h1>Validation Test Form</h1>
     <div class="form-container">
-      <form novalidate>
+      <form novalidate class="form">
         <div class="form-field">
           <label for="email">Email:</label>
-          <input type="email" id="email" minlength="8" />
+          <input type="email" id="email" minlength="8" required/>
           <span class="email-err"></span>
         </div>
         <div class="form-field">
           <label for="country">Country:</label>
-          <select id="country" name="country">
+          <select id="country" name="country" required>
             <option value="">--Please choose an option--</option>
             <option value="US">United States</option>
             <option value="CA">Canada</option>
-            <option value="GB">United Kingdom</option>
+            <option value="UK">United Kingdom</option>
             <option value="AU">Australia</option>
           </select>
         </div>
@@ -29,16 +29,17 @@
           <label for="postalCode">
             Postal Code:
           </label>
-          <input type="text" id="postalCode" name="postal_code" />
+          <input type="text" id="postalCode" name="postal_code" required/>
+          <span class="postal-err"></span>
         </div>
         <div class="form-field">
           <label for="password">Password:</label>
-          <input type="password" id="password" />
+          <input type="password" id="password" minlength="8" required/>
           <span class="pass-err"></span>
         </div>
         <div class="form-field">
           <label for="confirm_password">Confirm Password:</label>
-          <input type="password" id="confirm_password" />
+          <input type="password" id="confirmPassword" required/>
           <span class="confirm-pass-err"></span>
         </div>
         <button type="submit">Submit</button>
